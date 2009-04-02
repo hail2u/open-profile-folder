@@ -3,7 +3,11 @@
   xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <RDF:Description about="urn:mozilla:install-manifest">
     <em:id>{a756d17a-5a4c-4417-813c-c8cd0151e486}</em:id>
+    <em:name>Open Profile Folder</em:name>
     <em:version>1.1.6</em:version>
+    <em:description>Open current profile folder from &quot;Tools&quot; menu.</em:description>
+    <em:creator>Kyo Nagashima</em:creator>
+    <em:homepageURL>http://hail2u.net/archives/fxexts.html#open_profile_folder</em:homepageURL>
 
     <em:targetApplication>
       <RDF:Description>
@@ -12,16 +16,4 @@
         <em:maxVersion>3.0.*</em:maxVersion>
       </RDF:Description>
     </em:targetApplication>
-
-    <em:name>Open Profile Folder</em:name>
-    <em:description>Open current profile folder from &quot;Tools&quot; menu.</em:description>
-    <em:creator>Kyo Nagashima</em:creator>
-    <em:homepageURL>http://hail2u.net/archives/fxexts.html#open_profile_folder</em:homepageURL>
-
-    <em:file>
-      <RDF:Description about="urn:mozilla:extension:file:open_profile_folder.jar">
-        <em:package>content/open_profile_folder/</em:package>
-      </RDF:Description>
-    </em:file>
-  </RDF:Description>
 </RDF:RDF>

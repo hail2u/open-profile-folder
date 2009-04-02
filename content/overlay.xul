@@ -2,7 +2,7 @@
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   id="open_profile_folder_overlay">
   <script type="application/x-javascript"
-    src="chrome://open_profile_folder/content/open_profile_folder_overlay.js"/>
+    src="chrome://open_profile_folder/content/overlay.js"/>
 
   <menupopup id="menu_ToolsPopup">
     <menuitem id="menu_open_profile_folder"

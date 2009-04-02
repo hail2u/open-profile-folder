@@ -1,2 +1,2 @@
-overlay	chrome://browser/content/browser.xul	chrome://open_profile_folder/content/open_profile_folder_overlay.xul
-content	open_profile_folder	chrome/content/
+overlay	chrome://browser/content/browser.xul	chrome://open_profile_folder/content/overlay.xul
+content	open_profile_folder	content/

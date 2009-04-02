@@ -12,4 +12,4 @@ var openProfileFolder = {
     fileLocal.initWithPath(aFolder);
     fileLocal.launch();
   }
-}
+};
