@@ -7,8 +7,8 @@
 
   <menupopup id="menu_ToolsPopup">
     <menuitem id="menu_open_profile_folder"
-      label="&menu_open_profile_folder_label;"
-      accesskey="F"
+      label="&open_profile_folder.command.label;"
+      accesskey="&open_profile_folder.command.accesskey;"
       insertbefore="sanitizeSeparator"
       oncommand="openProfileFolder.open();"/>
   </menupopup>

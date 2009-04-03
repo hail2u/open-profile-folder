@@ -1,1 +1,2 @@
-<!ENTITY menu_open_profile_folder_label "Open Profile Folder...">
+<!ENTITY open_profile_folder.command.label     "Open Profile Folder...">
+<!ENTITY open_profile_folder.command.accesskey "F">
