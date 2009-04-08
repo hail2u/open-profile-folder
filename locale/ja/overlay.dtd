@@ -1,3 +1,3 @@
 <!ENTITY open_profile_folder.command.label     "プロファイルフォルダを開く...">
 <!ENTITY open_profile_folder.command.accesskey "F">
-<!ENTITY open_profile_folder.command.tootip    "現在のプロファイルに割り当てられたフォルダを開きます">
+<!ENTITY open_profile_folder.command.tooltip   "現在のプロファイルに割り当てられたフォルダを開きます">
