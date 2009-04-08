@@ -4,3 +4,5 @@ overlay	chrome://browser/content/browser.xul	chrome://open_profile_folder/conten
 
 locale	open_profile_folder	en-US	locale/en-US/
 locale	open_profile_folder	ja	locale/ja/
+
+skin	  open_profile_folder	classic/1.0	skin/

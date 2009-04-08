@@ -6,10 +6,19 @@
     src="chrome://open_profile_folder/content/overlay.js"/>
 
   <menupopup id="menu_ToolsPopup">
-    <menuitem id="menu_open_profile_folder"
+    <menuitem id="menuitem_open_profile_folder"
       label="&open_profile_folder.command.label;"
       accesskey="&open_profile_folder.command.accesskey;"
       insertbefore="sanitizeSeparator"
       oncommand="openProfileFolder.open();"/>
   </menupopup>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="toolbarbutton_open_profile_folder"
+      class="toolbarbutton-1"
+      label="&open_profile_folder.command.label;"
+      image="chrome://open_profile_folder/skin/toolbarbutton_icon.png"
+      tooltiptext="&open_profile_folder.command.tooltip;"
+      oncommand="openProfileFolder.open();"/>
+  </toolbarpalette>
 </overlay>
