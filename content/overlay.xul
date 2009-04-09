@@ -17,7 +17,7 @@
     <toolbarbutton id="toolbarbutton_open_profile_folder"
       class="toolbarbutton-1"
       label="&open_profile_folder.command.label;"
-      image="chrome://open_profile_folder/skin/toolbarbutton_icon.png"
+      image="chrome://mozapps/skin/profile/profileicon.png"
       tooltiptext="&open_profile_folder.command.tooltip;"
       oncommand="openProfileFolder.open();"/>
   </toolbarpalette>
