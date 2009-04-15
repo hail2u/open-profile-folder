@@ -1,0 +1,7 @@
+#open-profile-folder-button {
+  list-style-image: url("chrome://open-profile-folder/skin/toolbarbutton-icon-large.png");
+}
+
+toolbar[iconsize="small"] #open-profile-folder-button {
+  list-style-image: url("chrome://open-profile-folder/skin/toolbarbutton-icon-small.png");
+}

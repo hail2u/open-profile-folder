@@ -1,6 +1,10 @@
-content	open_profile_folder	content/
+content	open-profile-folder	content/
 
-overlay	chrome://browser/content/browser.xul	chrome://open_profile_folder/content/overlay.xul
+overlay	chrome://browser/content/browser.xul	chrome://open-profile-folder/content/overlay.xul
 
-locale	open_profile_folder	en-US	locale/en-US/
-locale	open_profile_folder	ja	locale/ja/
+locale	open-profile-folder	en-US	locale/en-US/
+locale	open-profile-folder	ja	locale/ja/
+
+skin	open-profile-folder	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://open-profile-folder/skin/overlay.css
+style	chrome://browser/content/browser.xul	chrome://open-profile-folder/skin/overlay.css

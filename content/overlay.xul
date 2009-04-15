@@ -1,24 +1,23 @@
 <?xml version="1.0"?>
-<!DOCTYPE overlay SYSTEM "chrome://open_profile_folder/locale/overlay.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://open-profile-folder/locale/overlay.dtd">
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  id="open_profile_folder_overlay">
+  id="open-profile-folder-overlay">
   <script type="application/x-javascript"
-    src="chrome://open_profile_folder/content/overlay.js"/>
+    src="chrome://open-profile-folder/content/overlay.js"/>
 
   <menupopup id="menu_ToolsPopup">
-    <menuitem id="menuitem_open_profile_folder"
-      label="&open_profile_folder.command.label;"
-      accesskey="&open_profile_folder.command.accesskey;"
+    <menuitem id="menu_open-profile-folder"
+      label="&open-profile-folder.command.label;"
+      accesskey="&open-profile-folder.command.accesskey;"
       insertbefore="sanitizeSeparator"
       oncommand="openProfileFolder.open();"/>
   </menupopup>
 
   <toolbarpalette id="BrowserToolbarPalette">
-    <toolbarbutton id="toolbarbutton_open_profile_folder"
+    <toolbarbutton id="open-profile-folder-button"
       class="toolbarbutton-1"
-      label="&open_profile_folder.command.label;"
-      image="chrome://mozapps/skin/profile/profileicon.png"
-      tooltiptext="&open_profile_folder.command.tooltip;"
+      label="&open-profile-folder.command.label;"
+      tooltiptext="&open-profile-folder.command.tooltip;"
       oncommand="openProfileFolder.open();"/>
   </toolbarpalette>
 </overlay>
