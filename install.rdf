@@ -4,10 +4,10 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>{a756d17a-5a4c-4417-813c-c8cd0151e486}</em:id>
     <em:name>Open Profile Folder</em:name>
-    <em:version>1.1.6</em:version>
+    <em:version>1.2</em:version>
     <em:description>Open current profile folder from &quot;Tools&quot; menu or toolbar button.</em:description>
     <em:creator>Kyo Nagashima</em:creator>
-    <em:homepageURL>http://hail2u.net/archives/fxexts.html#open_profile_folder</em:homepageURL>
+    <em:homepageURL>http://hail2u.net/archives/fxexts.html#open-profile-folder</em:homepageURL>
 
     <em:targetApplication>
       <Description>
