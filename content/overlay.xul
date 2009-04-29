@@ -9,7 +9,7 @@
     <menuitem id="menu_open-profile-folder"
       label="&open-profile-folder.command.label;"
       accesskey="&open-profile-folder.command.accesskey;"
-      insertbefore="sanitizeSeparator"
+      insertafter="menu_preferences"
       oncommand="openProfileFolder.open();"/>
   </menupopup>
 
