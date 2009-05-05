@@ -3,7 +3,11 @@
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   id="open-profile-folder-overlay">
   <script type="application/x-javascript"
+    src="chrome://global/content/nsUserSettings.js"/>
+  <script type="application/x-javascript"
     src="chrome://open-profile-folder/content/overlay.js"/>
+  <script type="application/x-javascript"
+    src="chrome://open-profile-folder/content/prefs-overlay.js"/>
 
   <menupopup id="menu_ToolsPopup">
     <menuitem id="menu_open-profile-folder"

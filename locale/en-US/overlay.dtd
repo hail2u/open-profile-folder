@@ -1,3 +1,10 @@
 <!ENTITY open-profile-folder.command.label     "Open Profile Folder...">
 <!ENTITY open-profile-folder.command.accesskey "F">
 <!ENTITY open-profile-folder.command.tooltip   "Open folder assigned your current profile">
+
+<!ENTITY open-profile-folder.prefs.use_custom_application.label           "Use custom application specified below">
+<!ENTITY open-profile-folder.prefs.use_custom_application.accesskey       "U">
+<!ENTITY open-profile-folder.prefs.custom_application_path.label          "Application path:">
+<!ENTITY open-profile-folder.prefs.custom_application_path.accesskey      "A">
+<!ENTITY open-profile-folder.prefs.custom_application_arguments.label     "Launch arguments:">
+<!ENTITY open-profile-folder.prefs.custom_application_arguments.accesskey "L">
