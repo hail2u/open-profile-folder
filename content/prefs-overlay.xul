@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://browser/skin/" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://open-profile-folder/locale/overlay.dtd">
-<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  id="open-profile-folder-prefs-overlay"
+<dialog id="open-profile-folder-prefs-overlay"
   title="Open Profile Folder"
   buttons="accept, cancel"
+  width="360"
+  height="200"
   onload="openProfileFolderPrefs.loadPrefs();"
   ondialogaccept="openProfileFolderPrefs.savePrefs();"
-  width="360"
-  height="200">
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript"
     src="chrome://global/content/nsUserSettings.js"/>
   <script type="application/x-javascript"
@@ -16,15 +16,15 @@
 
   <vbox>
     <checkbox id="prefUseCustomApplication"
-      label="&open-profile-folder.prefs.use_custom_application.label;"
-      accesskey="&open-profile-folder.prefs.use_custom_application.accesskey;"/>
+      label="&pref.useCustomApplication.label;"
+      accesskey="&pref.useCustomApplication.accesskey;"/>
     <label control="prefCustomApplicationPath"
-      value="&open-profile-folder.prefs.custom_application_path.label;"
-      accesskey="&open-profile-folder.prefs.custom_application_path.accesskey;"/>
+      value="&pref.customApplicationPath.label;"
+      accesskey="&pref.customApplicationPath.accesskey;"/>
     <textbox id="prefCustomApplicationPath"/>
     <label control="prefCustomApplicationArguments"
-      value="&open-profile-folder.prefs.custom_application_arguments.label;"
-      accesskey="&open-profile-folder.prefs.custom_application_arguments.accesskey;"/>
+      value="&pref.customApplicationArguments.label;"
+      accesskey="&pref.customApplicationArguments.accesskey;"/>
     <textbox id="prefCustomApplicationArguments"/>
   </vbox>
 </dialog>

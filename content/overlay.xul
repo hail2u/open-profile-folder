@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE overlay SYSTEM "chrome://open-profile-folder/locale/overlay.dtd">
-<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  id="open-profile-folder-overlay">
+<overlay id="open-profile-folder-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript"
     src="chrome://global/content/nsUserSettings.js"/>
   <script type="application/x-javascript"
@@ -11,8 +11,8 @@
 
   <menupopup id="menu_ToolsPopup">
     <menuitem id="menu_open-profile-folder"
-      label="&open-profile-folder.command.label;"
-      accesskey="&open-profile-folder.command.accesskey;"
+      label="&command.open.label;"
+      accesskey="&command.open.accesskey;"
       insertafter="menu_preferences"
       oncommand="openProfileFolder.open();"/>
   </menupopup>
@@ -20,8 +20,8 @@
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton id="open-profile-folder-button"
       class="toolbarbutton-1"
-      label="&open-profile-folder.command.label;"
-      tooltiptext="&open-profile-folder.command.tooltip;"
+      label="&command.open.label;"
+      tooltiptext="&command.open.tooltip;"
       oncommand="openProfileFolder.open();"/>
   </toolbarpalette>
 </overlay>
