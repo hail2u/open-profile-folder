@@ -4,8 +4,6 @@
 <dialog id="open-profile-folder-prefs-overlay"
   title="Open Profile Folder"
   buttons="accept, cancel"
-  width="360"
-  height="200"
   onload="openProfileFolderPrefs.loadPrefs();"
   ondialogaccept="openProfileFolderPrefs.savePrefs();"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
