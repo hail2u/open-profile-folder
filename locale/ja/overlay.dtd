@@ -1,10 +1,10 @@
-<!ENTITY open-profile-folder.command.label     "プロファイルフォルダを開く...">
-<!ENTITY open-profile-folder.command.accesskey "F">
-<!ENTITY open-profile-folder.command.tooltip   "現在のプロファイルに割り当てられたフォルダを開きます">
+<!ENTITY command.open.label     "プロファイルフォルダを開く...">
+<!ENTITY command.open.accesskey "F">
+<!ENTITY command.open.tooltip   "現在のプロファイルに割り当てられたフォルダを開きます">
 
-<!ENTITY open-profile-folder.prefs.use_custom_application.label           "以下に指定したアプリケーションを使う">
-<!ENTITY open-profile-folder.prefs.use_custom_application.accesskey       "U">
-<!ENTITY open-profile-folder.prefs.custom_application_path.label          "アプリケーションのパス:">
-<!ENTITY open-profile-folder.prefs.custom_application_path.accesskey      "A">
-<!ENTITY open-profile-folder.prefs.custom_application_arguments.label     "起動時の引数:">
-<!ENTITY open-profile-folder.prefs.custom_application_arguments.accesskey "L">
+<!ENTITY pref.useCustomApplication.label           "以下に指定したアプリケーションをフォルダを開くのに使う">
+<!ENTITY pref.useCustomApplication.accesskey       "U">
+<!ENTITY pref.customApplicationPath.label          "アプリケーションのパス:">
+<!ENTITY pref.customApplicationPath.accesskey      "A">
+<!ENTITY pref.customApplicationArguments.label     "起動時の引数:">
+<!ENTITY pref.customApplicationArguments.accesskey "L">
