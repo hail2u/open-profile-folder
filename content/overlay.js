@@ -1,9 +1,11 @@
 var openProfileFolder = {
-  open: function() {
+  open: function () {
     var prefs = openProfileFolderPrefs;
+
     var prefUseCustomApplication = nsPreferences.getBoolPref(prefs.USE_CUSTOM_APPLICATION_KEY, prefs.USE_CUSTOM_APPLICATION_DEFAULT);
-    var directoryService = Components.classes['@mozilla.org/file/directory_service;1'].getService(Components.interfaces.nsIProperties);
-    var profileFolder = directoryService.get('ProfD', Components.interfaces.nsIFile);
+
+    var directoryService = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
+    var profileFolder = directoryService.get("ProfD", Components.interfaces.nsIFile);
 
     if (prefUseCustomApplication) {
       var prefCustomApplicationPath      = nsPreferences.copyUnicharPref(prefs.CUSTOM_APPLICATION_PATH_KEY, prefs.CUSTOM_APPLICATION_PATH_DEFAULT);
@@ -11,6 +13,7 @@ var openProfileFolder = {
 
       var path = Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
       path.initWithPath(prefCustomApplicationPath);
+
       var args = [];
       prefCustomApplicationArguments.split(" ").forEach(function (s) {
         if (s) args.push(s);
