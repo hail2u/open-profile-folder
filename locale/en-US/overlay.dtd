@@ -6,5 +6,7 @@
 <!ENTITY pref.useCustomApplication.accesskey       "U">
 <!ENTITY pref.customApplicationPath.label          "Application path:">
 <!ENTITY pref.customApplicationPath.accesskey      "A">
+<!ENTITY pref.customApplicationBrowse.label        "Browse...">
+<!ENTITY pref.customApplicationBrowse.accesskey    "O">
 <!ENTITY pref.customApplicationArguments.label     "Launch arguments:">
 <!ENTITY pref.customApplicationArguments.accesskey "L">

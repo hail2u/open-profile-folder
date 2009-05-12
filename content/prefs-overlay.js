@@ -6,7 +6,7 @@ var openProfileFolderPrefs = {
   CUSTOM_APPLICATION_ARGUMENTS_KEY:     "extensions.open-profile-folder.custom_application_arguments",
   CUSTOM_APPLICATION_ARGUMENTS_DEFAULT: "",
 
-  loadPrefs: function() {
+  loadPrefs: function () {
     var prefUseCustomApplication       = nsPreferences.getBoolPref(this.USE_CUSTOM_APPLICATION_KEY, this.USE_CUSTOM_APPLICATION_DEFAULT);
     var prefCustomApplicationPath      = nsPreferences.copyUnicharPref(this.CUSTOM_APPLICATION_PATH_KEY, this.CUSTOM_APPLICATION_PATH_DEFAULT);
     var prefCustomApplicationArguments = nsPreferences.copyUnicharPref(this.CUSTOM_APPLICATION_ARGUMENTS_KEY, this.CUSTOM_APPLICATION_ARGUMENTS_DEFAULT);
@@ -15,12 +15,25 @@ var openProfileFolderPrefs = {
     document.getElementById("prefCustomApplicationArguments").value = prefCustomApplicationArguments;
   },
 
-  savePrefs: function() {
+  savePrefs: function () {
     var prefUseCustomApplication       = document.getElementById("prefUseCustomApplication").checked;
     var prefCustomApplicationPath      = document.getElementById("prefCustomApplicationPath").value;
     var prefCustomApplicationArguments = document.getElementById("prefCustomApplicationArguments").value;
     nsPreferences.setBoolPref(this.USE_CUSTOM_APPLICATION_KEY, prefUseCustomApplication);
     nsPreferences.setUnicharPref(this.CUSTOM_APPLICATION_PATH_KEY,prefCustomApplicationPath);
     nsPreferences.setUnicharPref(this.CUSTOM_APPLICATION_ARGUMENTS_KEY, prefCustomApplicationArguments);
+  },
+
+  browse: function () {
+    var nsIFilePicker = Components.interfaces.nsIFilePicker;
+    var filePicker = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
+    filePicker.init(window, "Select a Application", nsIFilePicker.modeOpen);
+    filePicker.appendFilters(nsIFilePicker.filterApps);
+    filePicker.appendFilters(nsIFilePicker.filterAll);
+    var res = filePicker.show();
+
+    if (res === nsIFilePicker.returnOK) {
+      document.getElementById("prefCustomApplicationPath").value = filePicker.file.path;
+    }
   }
 };

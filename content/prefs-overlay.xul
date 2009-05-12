@@ -19,7 +19,13 @@
     <label control="prefCustomApplicationPath"
       value="&pref.customApplicationPath.label;"
       accesskey="&pref.customApplicationPath.accesskey;"/>
-    <textbox id="prefCustomApplicationPath"/>
+    <hbox>
+      <textbox id="prefCustomApplicationPath" flex="1"/>
+      <button id="prefCustomApplicationBrowse"
+        label="&pref.customApplicationBrowse.label;"
+        accesskey="&pref.customApplicationBrowse.accesskey;"
+        oncommand="openProfileFolderPrefs.browse()"/>
+    </hbox>
     <label control="prefCustomApplicationArguments"
       value="&pref.customApplicationArguments.label;"
       accesskey="&pref.customApplicationArguments.accesskey;"/>

@@ -6,5 +6,7 @@
 <!ENTITY pref.useCustomApplication.accesskey       "U">
 <!ENTITY pref.customApplicationPath.label          "アプリケーションのパス:">
 <!ENTITY pref.customApplicationPath.accesskey      "A">
+<!ENTITY pref.customApplicationBrowse.label        "参照...">
+<!ENTITY pref.customApplicationBrowse.accesskey    "O">
 <!ENTITY pref.customApplicationArguments.label     "起動時の引数:">
 <!ENTITY pref.customApplicationArguments.accesskey "L">
