@@ -20,7 +20,7 @@ var openProfileFolderPrefs = {
     var prefCustomApplicationPath      = document.getElementById("prefCustomApplicationPath").value;
     var prefCustomApplicationArguments = document.getElementById("prefCustomApplicationArguments").value;
     nsPreferences.setBoolPref(this.USE_CUSTOM_APPLICATION_KEY, prefUseCustomApplication);
-    nsPreferences.setUnicharPref(this.CUSTOM_APPLICATION_PATH_KEY,prefCustomApplicationPath);
+    nsPreferences.setUnicharPref(this.CUSTOM_APPLICATION_PATH_KEY, prefCustomApplicationPath);
     nsPreferences.setUnicharPref(this.CUSTOM_APPLICATION_ARGUMENTS_KEY, prefCustomApplicationArguments);
   },
 

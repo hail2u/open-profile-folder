@@ -8,12 +8,11 @@ var openProfileFolder = {
     var profileFolder = directoryService.get("ProfD", Components.interfaces.nsIFile);
 
     if (prefUseCustomApplication) {
-      var prefCustomApplicationPath      = nsPreferences.copyUnicharPref(prefs.CUSTOM_APPLICATION_PATH_KEY, prefs.CUSTOM_APPLICATION_PATH_DEFAULT);
-      var prefCustomApplicationArguments = nsPreferences.copyUnicharPref(prefs.CUSTOM_APPLICATION_ARGUMENTS_KEY, prefs.CUSTOM_APPLICATION_ARGUMENTS_DEFAULT);
-
+      var prefCustomApplicationPath = nsPreferences.copyUnicharPref(prefs.CUSTOM_APPLICATION_PATH_KEY, prefs.CUSTOM_APPLICATION_PATH_DEFAULT);
       var path = Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
       path.initWithPath(prefCustomApplicationPath);
 
+      var prefCustomApplicationArguments = nsPreferences.copyUnicharPref(prefs.CUSTOM_APPLICATION_ARGUMENTS_KEY, prefs.CUSTOM_APPLICATION_ARGUMENTS_DEFAULT);
       var args = [];
       prefCustomApplicationArguments.split(" ").forEach(function (s) {
         if (s) args.push(s);
