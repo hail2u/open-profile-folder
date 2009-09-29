@@ -20,7 +20,13 @@ var openProfileFolder = {
       args.push(profileFolder.path);
 
       var process = Components.classes["@mozilla.org/process/util;1"].getService(Components.interfaces.nsIProcess);
-      process.init(path);
+
+      try {
+        process.init(path);
+      } catch (e) {
+        // NS_ERROR_ALREADY_INITIALIZED
+      }
+
       process.run(false, args, args.length);
     } else {
       var fileLocal = Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
