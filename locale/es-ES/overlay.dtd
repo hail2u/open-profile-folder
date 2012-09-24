@@ -1,0 +1,12 @@
+﻿<!ENTITY command.open.label     "Abrir carpeta del pefil de usuario...">
+<!ENTITY command.open.accesskey "C">
+<!ENTITY command.open.tooltip   "Abre la carpeta asignada al pefil de usuario actual">
+
+<!ENTITY pref.useCustomApplication.label           "Usar la aplicación especificada a continuación para abrir la carpeta">
+<!ENTITY pref.useCustomApplication.accesskey       "U">
+<!ENTITY pref.customApplicationPath.label          "Ruta de la aplicación:">
+<!ENTITY pref.customApplicationPath.accesskey      "R">
+<!ENTITY pref.customApplicationBrowse.label        "Seleccionar...">
+<!ENTITY pref.customApplicationBrowse.accesskey    "S">
+<!ENTITY pref.customApplicationArguments.label     "Parámetros de ejecución:">
+<!ENTITY pref.customApplicationArguments.accesskey "P">
